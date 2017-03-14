@@ -1,4 +1,4 @@
-package io.github.caio.grpc;
+package cn.chinajnc.grpc.hello;
 
 
 import io.grpc.Server;

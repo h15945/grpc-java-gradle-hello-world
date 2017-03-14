@@ -2,7 +2,7 @@
 
 set -e
 
-OLD_PACKAGE="io.github.caio.grpc";
+OLD_PACKAGE=$2;
 NEW_PACKAGE=$1
 SED=${SED:=sed}
 
@@ -11,7 +11,7 @@ if [ -z $1 ]; then
     exit 1
 fi
 
-git grep -l $OLD_PACKAGE| xargs $SED -i "s/${OLD_PACKAGE}/${NEW_PACKAGE}/g"
+#git grep -l $OLD_PACKAGE| xargs $SED -i "s/${OLD_PACKAGE}/${NEW_PACKAGE}/g"
 
 OLD_DIR_STRUCTURE=${OLD_PACKAGE//.//}
 NEW_DIR_STRUCTURE=${NEW_PACKAGE//.//}
@@ -23,5 +23,5 @@ for basedir in src/main/java src/generated/main/*; do
     mv ${basedir}/${OLD_DIR_STRUCTURE}/* ${basedir}/${NEW_DIR_STRUCTURE}/
     rm -rf ${basedir}/io
 done
-
+python ./rename_package.py $OLD_PACKAGE $NEW_PACKAGE
 echo "Done!";

@@ -1,4 +1,4 @@
-package io.github.caio.grpc;
+package cn.chinajnc.grpc.hello;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
@@ -31,14 +31,14 @@ public class GreeterGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<io.github.caio.grpc.HelloRequest,
-      io.github.caio.grpc.HelloResponse> METHOD_SAY_HELLO =
+  public static final io.grpc.MethodDescriptor<cn.chinajnc.grpc.hello.HelloRequest,
+      cn.chinajnc.grpc.hello.HelloResponse> METHOD_SAY_HELLO =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "helloworld.Greeter", "SayHello"),
-          io.grpc.protobuf.ProtoUtils.marshaller(io.github.caio.grpc.HelloRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(io.github.caio.grpc.HelloResponse.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(cn.chinajnc.grpc.hello.HelloRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(cn.chinajnc.grpc.hello.HelloResponse.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -75,8 +75,8 @@ public class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sayHello(io.github.caio.grpc.HelloRequest request,
-        io.grpc.stub.StreamObserver<io.github.caio.grpc.HelloResponse> responseObserver) {
+    public void sayHello(cn.chinajnc.grpc.hello.HelloRequest request,
+        io.grpc.stub.StreamObserver<cn.chinajnc.grpc.hello.HelloResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SAY_HELLO, responseObserver);
     }
 
@@ -86,8 +86,8 @@ public class GreeterGrpc {
             METHOD_SAY_HELLO,
             asyncUnaryCall(
               new MethodHandlers<
-                io.github.caio.grpc.HelloRequest,
-                io.github.caio.grpc.HelloResponse>(
+                cn.chinajnc.grpc.hello.HelloRequest,
+                cn.chinajnc.grpc.hello.HelloResponse>(
                   this, METHODID_SAY_HELLO)))
           .build();
     }
@@ -119,8 +119,8 @@ public class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sayHello(io.github.caio.grpc.HelloRequest request,
-        io.grpc.stub.StreamObserver<io.github.caio.grpc.HelloResponse> responseObserver) {
+    public void sayHello(cn.chinajnc.grpc.hello.HelloRequest request,
+        io.grpc.stub.StreamObserver<cn.chinajnc.grpc.hello.HelloResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request, responseObserver);
     }
@@ -152,7 +152,7 @@ public class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public io.github.caio.grpc.HelloResponse sayHello(io.github.caio.grpc.HelloRequest request) {
+    public cn.chinajnc.grpc.hello.HelloResponse sayHello(cn.chinajnc.grpc.hello.HelloRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_SAY_HELLO, getCallOptions(), request);
     }
@@ -184,8 +184,8 @@ public class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<io.github.caio.grpc.HelloResponse> sayHello(
-        io.github.caio.grpc.HelloRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<cn.chinajnc.grpc.hello.HelloResponse> sayHello(
+        cn.chinajnc.grpc.hello.HelloRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request);
     }
@@ -211,8 +211,8 @@ public class GreeterGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SAY_HELLO:
-          serviceImpl.sayHello((io.github.caio.grpc.HelloRequest) request,
-              (io.grpc.stub.StreamObserver<io.github.caio.grpc.HelloResponse>) responseObserver);
+          serviceImpl.sayHello((cn.chinajnc.grpc.hello.HelloRequest) request,
+              (io.grpc.stub.StreamObserver<cn.chinajnc.grpc.hello.HelloResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
