@@ -19,7 +19,7 @@ public  final class HelloRequest extends
     super(builder);
   }
   private HelloRequest() {
-    name_ = "";
+    namenews_ = "";
   }
 
   @java.lang.Override
@@ -50,7 +50,7 @@ public  final class HelloRequest extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            name_ = s;
+            namenews_ = s;
             break;
           }
         }
@@ -76,34 +76,34 @@ public  final class HelloRequest extends
             cn.chinajnc.grpc.hello.HelloRequest.class, cn.chinajnc.grpc.hello.HelloRequest.Builder.class);
   }
 
-  public static final int NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name_;
+  public static final int NAMENEWS_FIELD_NUMBER = 1;
+  private volatile java.lang.Object namenews_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string namenews = 1;</code>
    */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
+  public java.lang.String getNamenews() {
+    java.lang.Object ref = namenews_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      name_ = s;
+      namenews_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string namenews = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getNameBytes() {
-    java.lang.Object ref = name_;
+      getNamenewsBytes() {
+    java.lang.Object ref = namenews_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      name_ = b;
+      namenews_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -122,8 +122,8 @@ public  final class HelloRequest extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+    if (!getNamenewsBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, namenews_);
     }
   }
 
@@ -132,8 +132,8 @@ public  final class HelloRequest extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+    if (!getNamenewsBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, namenews_);
     }
     memoizedSize = size;
     return size;
@@ -151,8 +151,8 @@ public  final class HelloRequest extends
     cn.chinajnc.grpc.hello.HelloRequest other = (cn.chinajnc.grpc.hello.HelloRequest) obj;
 
     boolean result = true;
-    result = result && getName()
-        .equals(other.getName());
+    result = result && getNamenews()
+        .equals(other.getNamenews());
     return result;
   }
 
@@ -163,8 +163,8 @@ public  final class HelloRequest extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
-    hash = (37 * hash) + NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + NAMENEWS_FIELD_NUMBER;
+    hash = (53 * hash) + getNamenews().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -287,7 +287,7 @@ public  final class HelloRequest extends
     }
     public Builder clear() {
       super.clear();
-      name_ = "";
+      namenews_ = "";
 
       return this;
     }
@@ -311,7 +311,7 @@ public  final class HelloRequest extends
 
     public cn.chinajnc.grpc.hello.HelloRequest buildPartial() {
       cn.chinajnc.grpc.hello.HelloRequest result = new cn.chinajnc.grpc.hello.HelloRequest(this);
-      result.name_ = name_;
+      result.namenews_ = namenews_;
       onBuilt();
       return result;
     }
@@ -353,8 +353,8 @@ public  final class HelloRequest extends
 
     public Builder mergeFrom(cn.chinajnc.grpc.hello.HelloRequest other) {
       if (other == cn.chinajnc.grpc.hello.HelloRequest.getDefaultInstance()) return this;
-      if (!other.getName().isEmpty()) {
-        name_ = other.name_;
+      if (!other.getNamenews().isEmpty()) {
+        namenews_ = other.namenews_;
         onChanged();
       }
       onChanged();
@@ -383,71 +383,71 @@ public  final class HelloRequest extends
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private java.lang.Object namenews_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string namenews = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
+    public java.lang.String getNamenews() {
+      java.lang.Object ref = namenews_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        name_ = s;
+        namenews_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string namenews = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
+        getNamenewsBytes() {
+      java.lang.Object ref = namenews_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        name_ = b;
+        namenews_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string namenews = 1;</code>
      */
-    public Builder setName(
+    public Builder setNamenews(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      name_ = value;
+      namenews_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string namenews = 1;</code>
      */
-    public Builder clearName() {
+    public Builder clearNamenews() {
       
-      name_ = getDefaultInstance().getName();
+      namenews_ = getDefaultInstance().getNamenews();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string namenews = 1;</code>
      */
-    public Builder setNameBytes(
+    public Builder setNamenewsBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      name_ = value;
+      namenews_ = value;
       onChanged();
       return this;
     }

@@ -28,9 +28,9 @@ public class HelloWorldClient {
     public void greet(String name) {
         logger.info("Trying to greet " + name);
         try {
-            HelloRequest request = HelloRequest.newBuilder().setName(name).build();
+            HelloRequest request = HelloRequest.newBuilder().setNamenews(name).build();
             HelloResponse response = blockingStub.sayHello(request);
-            logger.info("Response: " + response.getMessage());
+            logger.info("Response: " + response.getMessagessss());
         } catch (RuntimeException e) {
             logger.log(Level.WARNING, "Request to grpc server failed", e);
         }

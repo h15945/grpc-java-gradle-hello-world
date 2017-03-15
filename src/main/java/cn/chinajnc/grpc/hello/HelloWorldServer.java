@@ -12,7 +12,7 @@ public class HelloWorldServer {
 
     private static final Logger logger = Logger.getLogger(HelloWorldServer.class.getName());
 
-    private int port = 42420;
+    private int port = 50051;
     private Server server;
 
     private void start() throws Exception {
@@ -57,7 +57,8 @@ public class HelloWorldServer {
 
         @Override
         public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
-            HelloResponse response = HelloResponse.newBuilder().setMessage("Hello " + request.getName()).build();
+            System.out.println("receive message from " + request.getNamenews());
+            HelloResponse response = HelloResponse.newBuilder().setMessagessss("Hello " + request.getNamenews()).build();
             responseObserver.onNext(response);
             responseObserver.onCompleted();
         }

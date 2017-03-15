@@ -14,8 +14,9 @@ def checkPsthListWithDir(rootDir,filePathType):
 					path_list.append(f)
 	return path_list
 
-def checkContainedIntheProject(src,des):
-	mypath = os.path.abspath('.') + '/'
+def checkContainedIntheProject(src,des,folder):
+	print folder
+	mypath = os.path.abspath('.') + folder
 	path_list = checkPsthListWithDir(mypath,1)
 	for filepath in path_list:
 		#print filepath
@@ -29,4 +30,4 @@ def checkContainedIntheProject(src,des):
 			myfile.close()
 
 
-checkContainedIntheProject(sys.argv[1],sys.argv[2])
+checkContainedIntheProject(sys.argv[1],sys.argv[2],sys.argv[3])

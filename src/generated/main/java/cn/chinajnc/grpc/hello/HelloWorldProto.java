@@ -33,12 +33,12 @@ public final class HelloWorldProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021hello_world.proto\022\nhelloworld\"\034\n\014Hello" +
-      "Request\022\014\n\004name\030\001 \001(\t\" \n\rHelloResponse\022\017" +
-      "\n\007message\030\001 \001(\t2L\n\007Greeter\022A\n\010SayHello\022\030" +
-      ".helloworld.HelloRequest\032\031.helloworld.He" +
-      "lloResponse\"\000B(\n\023cn.chinajnc.grpc.helloB\017He" +
-      "lloWorldProtoP\001b\006proto3"
+      "\n\021hello_world.proto\022\nhelloworld\" \n\014Hello" +
+      "Request\022\020\n\010namenews\030\001 \001(\t\"$\n\rHelloRespon" +
+      "se\022\023\n\013messagessss\030\001 \001(\t2L\n\007Greeter\022A\n\010Sa" +
+      "yHello\022\030.helloworld.HelloRequest\032\031.hello" +
+      "world.HelloResponse\"\000B+\n\026cn.chinajnc.grp" +
+      "c.helloB\017HelloWorldProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -57,13 +57,13 @@ public final class HelloWorldProto {
     internal_static_helloworld_HelloRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_helloworld_HelloRequest_descriptor,
-        new java.lang.String[] { "Name", });
+        new java.lang.String[] { "Namenews", });
     internal_static_helloworld_HelloResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_helloworld_HelloResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_helloworld_HelloResponse_descriptor,
-        new java.lang.String[] { "Message", });
+        new java.lang.String[] { "Messagessss", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

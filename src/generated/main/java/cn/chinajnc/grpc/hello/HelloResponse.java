@@ -19,7 +19,7 @@ public  final class HelloResponse extends
     super(builder);
   }
   private HelloResponse() {
-    message_ = "";
+    messagessss_ = "";
   }
 
   @java.lang.Override
@@ -50,7 +50,7 @@ public  final class HelloResponse extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            message_ = s;
+            messagessss_ = s;
             break;
           }
         }
@@ -76,34 +76,34 @@ public  final class HelloResponse extends
             cn.chinajnc.grpc.hello.HelloResponse.class, cn.chinajnc.grpc.hello.HelloResponse.Builder.class);
   }
 
-  public static final int MESSAGE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object message_;
+  public static final int MESSAGESSSS_FIELD_NUMBER = 1;
+  private volatile java.lang.Object messagessss_;
   /**
-   * <code>optional string message = 1;</code>
+   * <code>optional string messagessss = 1;</code>
    */
-  public java.lang.String getMessage() {
-    java.lang.Object ref = message_;
+  public java.lang.String getMessagessss() {
+    java.lang.Object ref = messagessss_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      message_ = s;
+      messagessss_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string message = 1;</code>
+   * <code>optional string messagessss = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getMessageBytes() {
-    java.lang.Object ref = message_;
+      getMessagessssBytes() {
+    java.lang.Object ref = messagessss_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      message_ = b;
+      messagessss_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -122,8 +122,8 @@ public  final class HelloResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getMessageBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
+    if (!getMessagessssBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, messagessss_);
     }
   }
 
@@ -132,8 +132,8 @@ public  final class HelloResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getMessageBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
+    if (!getMessagessssBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, messagessss_);
     }
     memoizedSize = size;
     return size;
@@ -151,8 +151,8 @@ public  final class HelloResponse extends
     cn.chinajnc.grpc.hello.HelloResponse other = (cn.chinajnc.grpc.hello.HelloResponse) obj;
 
     boolean result = true;
-    result = result && getMessage()
-        .equals(other.getMessage());
+    result = result && getMessagessss()
+        .equals(other.getMessagessss());
     return result;
   }
 
@@ -163,8 +163,8 @@ public  final class HelloResponse extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
-    hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
-    hash = (53 * hash) + getMessage().hashCode();
+    hash = (37 * hash) + MESSAGESSSS_FIELD_NUMBER;
+    hash = (53 * hash) + getMessagessss().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -287,7 +287,7 @@ public  final class HelloResponse extends
     }
     public Builder clear() {
       super.clear();
-      message_ = "";
+      messagessss_ = "";
 
       return this;
     }
@@ -311,7 +311,7 @@ public  final class HelloResponse extends
 
     public cn.chinajnc.grpc.hello.HelloResponse buildPartial() {
       cn.chinajnc.grpc.hello.HelloResponse result = new cn.chinajnc.grpc.hello.HelloResponse(this);
-      result.message_ = message_;
+      result.messagessss_ = messagessss_;
       onBuilt();
       return result;
     }
@@ -353,8 +353,8 @@ public  final class HelloResponse extends
 
     public Builder mergeFrom(cn.chinajnc.grpc.hello.HelloResponse other) {
       if (other == cn.chinajnc.grpc.hello.HelloResponse.getDefaultInstance()) return this;
-      if (!other.getMessage().isEmpty()) {
-        message_ = other.message_;
+      if (!other.getMessagessss().isEmpty()) {
+        messagessss_ = other.messagessss_;
         onChanged();
       }
       onChanged();
@@ -383,71 +383,71 @@ public  final class HelloResponse extends
       return this;
     }
 
-    private java.lang.Object message_ = "";
+    private java.lang.Object messagessss_ = "";
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string messagessss = 1;</code>
      */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
+    public java.lang.String getMessagessss() {
+      java.lang.Object ref = messagessss_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        message_ = s;
+        messagessss_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string messagessss = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getMessageBytes() {
-      java.lang.Object ref = message_;
+        getMessagessssBytes() {
+      java.lang.Object ref = messagessss_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        message_ = b;
+        messagessss_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string messagessss = 1;</code>
      */
-    public Builder setMessage(
+    public Builder setMessagessss(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      message_ = value;
+      messagessss_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string messagessss = 1;</code>
      */
-    public Builder clearMessage() {
+    public Builder clearMessagessss() {
       
-      message_ = getDefaultInstance().getMessage();
+      messagessss_ = getDefaultInstance().getMessagessss();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string messagessss = 1;</code>
      */
-    public Builder setMessageBytes(
+    public Builder setMessagessssBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      message_ = value;
+      messagessss_ = value;
       onChanged();
       return this;
     }
